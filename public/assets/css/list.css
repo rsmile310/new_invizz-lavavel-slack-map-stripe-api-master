@@ -1,0 +1,49 @@
+.m-list-object {
+    position: relative;
+    display: flex;
+    padding: 5px;
+    width: 100%;
+    border-bottom: 1px solid lightgrey;
+    transition: all 0.3s;
+}
+
+.m-list-object:hover {
+    cursor: pointer;
+    background: #efefef;
+}
+
+.m-list-object:active {
+    background: #c5c3c3;
+}
+
+.m-avatar {
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+    margin-right: 15px;
+}
+
+.m-person-content {
+    line-height: 1.5;
+}
+
+.m-name {
+    color: black;
+    font-size: 22px;
+}
+
+.m-type {
+    margin-bottom: 3px;
+}
+
+.m-location {
+    color: black;
+    font-size: 12px;
+}
+
+.m-enter {
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translate(-50%, -50%);
+}

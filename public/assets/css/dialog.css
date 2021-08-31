@@ -1,0 +1,142 @@
+.btn-get-started {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    /* display: inline-block; */
+    padding: 10px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #35c5a3;
+}
+
+.btn-get-started:hover {
+    color: #fff;
+    background: #247cf0;
+}
+
+.line-spacing {
+    height: 10px;
+}
+
+.profile-close {
+    font-size: 46px;
+    position: absolute;
+    right: 1%;
+    top: 12px;
+    border-radius: 50%;
+    color: #f1f6fe;
+}
+
+.profile-close:hover {
+    cursor: pointer;
+    color: #040f5a;
+}
+
+.profile-dialog {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: none;
+    z-index: 1005;
+}
+
+.modal-profile-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-profile-top {
+    height: 30%;
+    width: 100%;
+    background-color: #cccccc;
+    background-position: center;
+    /* filter: blur(.4rem); */
+    background: url(/assets/img/home-bg.jpg);
+    background-size: cover;
+}
+
+.modal-profile-top-image {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-profile-bottom {
+    width: 100%;
+    height: 70%;
+}
+
+.modal-profile-bottom-row {
+    display: flex;
+}
+
+.modal-profile-bottom-position {
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: 10%;
+}
+
+.modal-profile-bottom-info {
+    display: flex;
+}
+
+.modal-profile-bottom-detail {
+    font-size: 12px;
+    color: #909090;
+    margin-top: 2px;
+    margin-bottom: 10px;
+}
+
+.modal-profile-bottom-name {
+    padding: 20px 50px;
+}
+
+.profile-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    z-index: 1005;
+}
+
+.modal-profile-bottom-border {
+    width: 100%;
+    height: 100%;
+    padding: 5px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0px 3px 11px 3px rgb(0 0 0 / 9%);
+}
+
+.bio-box {
+    border: 1px solid #a5c5d6;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+@media screen and (max-width: 800px) {
+    .modal-profile-bottom-position {
+        width: 150px;
+        height: 150px;
+        margin-top: 0px;
+        margin-left: 0px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+    }
+    .modal-profile-bottom-name {
+        padding: 20px 20px;
+    }
+    .modal-profile-bottom-info {
+        display: block;
+    }
+}

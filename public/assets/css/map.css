@@ -1,0 +1,319 @@
+#map {
+    height: 100%;
+    width: 75%;
+}
+
+.change-map {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 41px;
+    text-align: center;
+    padding: 8px 20px;
+    background: #e0f2ff;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, .25);
+    z-index: 2;
+}
+
+.change-list {
+    display: none;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 41px;
+    text-align: center;
+    padding: 8px 20px;
+    background: #e0f2ff;
+    border-radius: 5px;
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, .25);
+    z-index: 2;
+}
+
+.artists-list {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 25%;
+    height: 100%;
+    box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.45);
+    background: white;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.list-content {
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.artists-navbar {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+    height: 60px;
+    padding: 11px;
+    background: white;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.45);
+    z-index: 1;
+}
+
+.logo {
+    width: 75px;
+}
+
+.search_all {
+    color: black;
+    background: #efefef;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+}
+
+.search_all:active {
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.artists-list-header {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.profile-list {
+    margin: 0.5rem;
+    width: 95%;
+    border: solid 1px #DADADA;
+    border-radius: 10px;
+    transition: border 0.8s, box-shadow 0.8s;
+}
+
+.profile-list:hover {
+    box-shadow: 0 3px 13px 0 rgba(0, 0, 0, 0.13);
+    border: solid 1px #0C6EEF;
+    cursor: pointer;
+}
+
+.photo {
+    position: relative;
+    margin: 0 0.75rem 0 0;
+}
+
+.profile-card {
+    display: flex;
+}
+
+.profile-photo {
+    width: 120px;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.artists-name {
+    font-weight: 700;
+    font-size: 1.4rem;
+}
+
+.artists-location {
+    font-size: 0.9rem;
+    color: #35c5a3;
+}
+
+.artists-type {
+    margin-top: 1px;
+    color: #949393;
+    font-size: 1.2rem;
+}
+
+.artists-status {
+    display: flex;
+    font-weight: 800;
+    color: #35c5a3;
+}
+
+.artists-age {
+    display: flex;
+    font-weight: 400;
+    color: #315ba9;
+}
+
+.profile-content {
+    position: relative;
+    width: 100%;
+}
+
+.profile-more {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 6px;
+    border-radius: 50%;
+    border: 1px solid #8c8282;
+    color: #8c8282;
+}
+
+.profile-more:hover {
+    color: #35c5a3;
+    border: solid 1px #35c5a3;
+    cursor: pointer;
+}
+
+.hide-screen {
+    display: none!important;
+}
+
+@media (max-width: 1700px) {
+    .artists-list {
+        width: 30%;
+    }
+    #map {
+        height: 100%;
+        width: 70%;
+    }
+    .artists-navbar {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .artists-list {
+        width: 30%;
+    }
+    #map {
+        height: 100%;
+        width: 70%;
+    }
+    .artists-navbar {
+        width: 30%;
+    }
+}
+
+@media (max-width: 1250px) {
+    .artists-list {
+        width: 40%;
+    }
+    #map {
+        height: 100%;
+        width: 60%;
+    }
+    .artists-navbar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .artists-list {
+        width: 40%;
+    }
+    #map {
+        height: 100%;
+        width: 60%;
+    }
+    .artists-navbar {
+        width: 40%;
+    }
+}
+
+@media (max-width: 910px) {
+    #map {
+        height: 60%;
+        width: 100%;
+    }
+    .artists-list {
+        position: absolute;
+        /* right: 0; */
+        top: 60%;
+        width: 100%;
+        height: 40%;
+        box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.45);
+        background: white;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .artists-navbar {
+        width: 100%;
+    }
+    .profile-list {
+        width: 98%;
+    }
+}
+
+@media (max-width: 400px) {
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+    .artists-list {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.45);
+        background: white;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .artists-navbar {
+        width: 100%;
+    }
+    .profile-list {
+        width: 95%;
+    }
+    .change-list {
+        display: block;
+    }
+    .change-map {
+        display: block;
+    }
+}
+
+@media (max-width: 300px) {
+    #map {
+        height: 100%;
+        width: 100%;
+    }
+    .artists-list {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        box-shadow: 0px 3px 11px 3px rgba(0, 0, 0, 0.45);
+        background: white;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .artists-navbar {
+        width: 100%;
+    }
+    .profile-card {
+        display: block;
+    }
+    .profile-photo {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    .photo {
+        position: relative;
+        margin: auto;
+    }
+    .profile-photo {
+        width: 100%;
+        height: 200px;
+        border-radius: 10px 10px 10px 10px;
+    }
+    .profile-list {
+        width: 95%;
+    }
+    .profile-content {
+        padding: 10px;
+    }
+}
